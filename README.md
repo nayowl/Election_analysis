@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 
-A Colorado Board of Election employee has given you the following tasks to complete the election audit of a recent local congressional election.
+A Colorado Board of Election employee has given the following tasks to complete the election audit of a recent local congressional election.
 
 1. Calculate the total number of votes cast.
 2. Get a complete list of candidates who received votes.
@@ -18,9 +18,25 @@ A Colorado Board of Election employee has given you the following tasks to compl
 - Data Source : election_results.csv
 - Software: Python 3.7.6,Visual Studio Code , 1.38.1
 
-## Summary
-The election analysis 
-The analysis of the election show that:
+## 3. Results
+ After running the analysis in Visual Studio Code, the result of the analysis will be displayed in the terminal and written in election_result.txt. Figure 1 shows us the result displayed in terminal, while Figure 2 shows us the result in txt file.
+ 
+<img width="940" alt="election_results_terminal" src="https://user-images.githubusercontent.com/88597187/132413107-e39b72c4-b517-4ee9-b0d7-78f13fa5eba1.png">
+<p align="center">
+<sub>Figure 1 Election Result Displayed in Terminal </sub>
+</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<img width="951" alt="election_results_txt" src="https://user-images.githubusercontent.com/88597187/132413116-1f7b9a95-067f-41de-b537-93029a088b58.png">
+<p align="center">
+<sub>Figure 2 Election Result Displayed in Txt File </sub>
+</p>
+
+<p>&nbsp;</p>
+
+From the result above we can summarize that :
 - There were 369,711 votes cast in the election
 - There were 3 county in this election :
     - Jefferson
@@ -42,6 +58,6 @@ The analysis of the election show that:
 - The winner of the election was:
     - Diana DeGette, who received 73.8% of the vote and 272,892 number of votes
   
- ## Challenge Overview
- ## Challenge Summary
+ ## 4. Summary
+ 
  
