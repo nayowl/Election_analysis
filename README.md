@@ -19,7 +19,23 @@ A Colorado Board of Election employee has given the following tasks to complete 
 - Software: Python 3.7.6,Visual Studio Code , 1.38.1
 
 ## 3. Results
- After running the analysis in Visual Studio Code, the result of the analysis will be displayed in the terminal and written in election_result.txt. Figure 1 shows us the result displayed in terminal, while Figure 2 shows us the result in txt file.
+The current dataset only has 1 sheet and  3 column consists of Ballot ID, County and Candidate. To know how the code is working , below is the step by step :
+1. Define path where the data source and the result will be placed
+```
+# Add our dependencies.
+import csv
+import os
+
+# Add a variable to load a file from a path.
+file_to_load = os.path.join( "Resources", "election_results.csv")
+# Add a variable to save the file to a path.
+file_to_save = os.path.join("analysis", "election_results.txt")
+
+```
+3. Setting Variable 
+
+
+After running the analysis in Visual Studio Code, the result of the analysis will be displayed in the terminal and written in election_result.txt. Figure 1 shows us the result displayed in terminal, while Figure 2 shows us the result in txt file.
  
 <img width="940" alt="election_results_terminal" src="https://user-images.githubusercontent.com/88597187/132413107-e39b72c4-b517-4ee9-b0d7-78f13fa5eba1.png">
 <p align="center">
@@ -59,5 +75,4 @@ From the result above we can summarize that :
     - Diana DeGette, who received 73.8% of the vote and 272,892 number of votes
   
  ## 4. Summary
- 
- 
+The election analysis
