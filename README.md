@@ -75,4 +75,19 @@ From the result above we can summarize that :
     - Diana DeGette, who received 73.8% of the vote and 272,892 number of votes
   
  ## 4. Summary
-The election analysis
+Data analytic is one of powerful tool that can be utilized for election and planning election strategies. By using data analytic, it will be more accurate and efficient to count and analyze the data. In addition, it can provide information and prediction for next election, therefore candidate can create relevant strategies and ensure those votes were coming in. 
+
+This election analysis is using Python and Visual Basic as the software. It can count total votes, total number of votes and percentages each county received, determine the county with the largest votes, total number of votes and percentages of each candidate received and determine the winner of the election. Other election with the same format data source as the election_results.csv can be run in this analysis.  But it will need some additional improvement if the format data source is different or there is change in displayed result.  Some improvement that can be implemented in this code are:
+
+- Additional field or replace existing field to use in another election type
+
+For federal election the county can be replaced to state, and we can add field like party and polling station in the data source, coding and displayed result. 
+
+- Additional logic to help creating election strategy
+
+To create strategy targeting for specific county, the code can be modified so it can count how many votes and percentage candidate received for each county. With the additional field like party and polling station, the code can be modified so it can count and display votes and percentage each party received in each county/state or in polling station.
+
+- Additional step to upload the data 
+
+For current analysis the data source is only from one csv. But if the election is big and has different data source, the code needs to be modified. We can put all the csv in one folder and then modified the code so it can read all the csv data in the folder and merge it.
+
