@@ -116,7 +116,7 @@ To get the all of the participating county, we made list for the county , read t
    ```
 - County with the largest number of votes is Denver, who received 82.8% of the votes and 306,055 number of votes
 
-To get county with the largest number of votes. First we made variable to track it. Then using the calculation we already made from previous step, we add condition in the loop, if the calculated  votes greater than largest_county_votes variable than it will be the value of the largest county votes. The condition will be added under the calculation to count votes and percentage.
+To get county with the largest number of votes. First we made variable to track it. Then using the calculation we already made from previous step, add condition in the loop, if the calculated  votes greater than largest_county_votes variable than it will be the value of the largest county votes. The condition will be added under the calculation to count votes and percentage.
 ```
 # 2: Track the largest county and county voter turnout.
 Largest_county=""
@@ -189,7 +189,25 @@ candidate_votes = {}
 - The winner of the election was:
     - Diana DeGette, who received 73.8% of the vote and 272,892 number of votes
  
-To get the election winner. First we made variable to track it. Then using the calculation we already made from previous step, we add condition in the loop, if the calculated  votes greater than largest_county_votes variable than it will be the value of the largest county votes. The condition will be added under the calculation to count votes and percentage.
+To get the election winner. First we made variable to track it. Then using the calculation we already made from previous step, add condition in the loop, if the calculated  votes greater than  winning_count variable than it will be the value of the winner. The condition will be added under the calculation to count votes and percentage for candidates.
+
+```
+# Track the winning candidate, vote count and percentage
+winning_candidate = ""
+winning_count = 0
+winning_percentage = 0
+
+
+        #  Save the candidate results to our text file.
+        txt_file.write(candidate_results) #.... from the previous code
+        # Determine winning vote count, winning percentage, and candidate.
+        if (votes > winning_count) and (vote_percentage > winning_percentage):
+            winning_count = votes
+            winning_candidate = candidate_name
+            winning_percentage = vote_percentage
+
+
+```
   
  ## 4. Summary
 Data analytic is one of powerful tool that can be utilized for election and planning election strategies. By using data analytic, it will be more accurate and efficient to count and analyze the data. In addition, it can provide information and prediction for next election, therefore candidate can create relevant strategies and ensure those votes were coming in. 
