@@ -41,7 +41,7 @@ The result of the analysis will be displayed in the terminal and written in elec
 From the result above it can be summarized that:
 - There were 369,711 votes cast in the election
 
-  Total votes variable is set to 0, then read  each row in the csv file to determine the total. 
+  To calculate total votes, first, the total votes variable will be set to 0 and then read  each row in the csv file to determine the total. 
   ```
   # Initialize a total vote counter.
   total_votes = 0
@@ -116,7 +116,7 @@ To get the all of the participating county, a county list is created , read the 
    ```
 - County with the largest number of votes is Denver, which received 82.8% of the votes and 306,055 number of votes
 
-To find the county with the largest number of votes,New Variables is created. Then using the calculation we already made from previous step, add condition in the loop, if the calculated  votes greater than largest_county_votes variable than it will be the value of the largest county votes. The condition will be added under the calculation to count votes and percentage.
+To find the county with the largest number of votes, three variables is created to hold the largest county, the largest county votes and the largest county percentage. Then using the calculation we already made from previous step, add condition in the loop, if the calculated  votes greater than largest_county_votes variable than it will be the value of the largest county votes. The condition will be added under the calculation to count votes and percentage.
 ```
 # 2: Track the largest county and county voter turnout.
 Largest_county=""
@@ -140,7 +140,7 @@ Largest_county_percentage=0
     - Diana DeGette received 73.8% of the vote and 272,892 number of votes
     - Raymon Anthony Doane received 3.1% of the vote and 11,606 number of votes
  
-To get the all of the participating candidates, we made list for the candidates , read the csv file and add the candidate name if the candidate name is not exist in the list ( this will be added under the coding for the county). Then to count the votes of each candidate,  we add dictionary to hold candidate name and candidate votes.  Subsequently, the votes calculation  and percentagefor each candidate will be added
+To get the all of the participating candidates, we made list for the candidates , read the csv file and add the candidate name if the candidate name is not exist in the list ( this will be added under the coding for the county). Then to count the votes of each candidate,  we add dictionary to hold candidate name and candidate votes.  Subsequently, the votes calculation  and percentage for each candidate will be added
 
 ```
 # Candidate Options and candidate votes.
@@ -210,9 +210,9 @@ winning_percentage = 0
 ```
   
  ## 4. Summary
-Data analytic is one of powerful tool that can be utilized for election and planning election strategies. By using data analytic, it will be more accurate and efficient to count and analyze the data. Additionally, it can provide information and prediction for next election, therefore candidate can create relevant strategies and ensure the gain of the votes.
+Data analytic is one of powerful tool that can be utilized for election and planning election strategies. By using data analytic, it will be more accurate and efficient to count and analyze the data. Additionally, it can provide information and prediction for next election, therefore candidate can create relevant strategies and ensure the votes gains.
 
-This election analysis is using Python and Visual Basic. These software are capable to calculate total votes, total number of votes and percentages each county received, determine the county with the largest votes, total number of votes and percentages of each candidate received and determine the winner of the election. Other election with the same format data source as the election_results.csv can be run in this analysis.  However,some improvements might be required if the format data source is different or there are changes in displayed result.  Some improvement which can be implemented in this code are:
+This election analysis is using Python and Visual Basic. These analysis are capable to calculate total votes, total number of votes and percentages each county received, determine the county with the largest votes, total number of votes and percentages of each candidate received and determine the winner of the election. Other election with the same format data source as the election_results.csv can be run in this analysis.  However,some improvements might be required if the format data source is different or there are changes in displayed result.  Some improvement which can be implemented in this code are:
 
 - Additional field or replace existing field to use in another election type
 
